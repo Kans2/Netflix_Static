@@ -325,6 +325,9 @@ footer ul li select
         flex-direction: column;
 
     }
+    .inputbox input{
+    width:300px!important;
+    }
     .logo
     {
        margin:0;
