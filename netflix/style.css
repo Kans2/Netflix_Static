@@ -233,17 +233,15 @@ padding-top:20%;
     box-shadow:none;
 }
 .accordion-button::after {
-
-    background-image:url('images/icons8-add-24.png');
-    transition:0.5s ease-in-out;
-   
+    background-image:url('images/icons8-add-24.png') !important;
+    transform: rotate(0deg) !important;
 }
-.accordion-button:not(.collapsed)::after {
 
-    background-image:url('images/icons8-close-30.png');
-    transition:0.5s ease-in-out;
-   
-} 
+.accordion-button:not(.collapsed)::after {
+    background-image:url('images/icons8-close-30.png') !important;
+    transform: rotate(0deg) !important;
+}
+
 .accordion-body 
 {
       border:3px solid black;
@@ -353,6 +351,9 @@ footer ul li select
        align-items: center;
        justify-content: center;
     }
+    #feauture{
+        margin-top: 2rem !important;
+    }
     #feauture .content
     {
         width:100%;
@@ -454,4 +455,11 @@ footer .language-select select
         height:80vh!important;
     }
     
+}
+
+/* --- FIX OVERFLOW IN FEATURE TEXT --- */
+@media screen and (max-width:1024px){
+    #feauture .content p {
+        width:100% !important;
+    }
 }
