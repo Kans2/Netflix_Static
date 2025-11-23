@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-
+   
     <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-yH6pQ4XvQ/OPgQ0yqZsFkT7LgJQ1k+Jswf6aS0WgYp3mXvEDy5U1zN29RltfV5EhUeC2VSwRz2Gqz7XhMZ8slw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
 <link rel="stylesheet" href="style.css">
 <body>
 <section id="home">
@@ -297,6 +304,48 @@
     </div>
       </footer>
 
+      <footer
+    style="
+      text-align: center;
+      padding: 20px;
+      background: #f7f7f7;
+      margin-top: 40px;
+    "
+  >
+    <div style="margin-bottom: 10px;">
+      <a
+        href="https://www.linkedin.com/in/kannan-404-s/"
+        target="_blank"
+        style="margin: 0 12px; font-size: 22px; color: #0077b5;"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a
+        href="https://github.com/Kans2"
+        target="_blank"
+        style="margin: 0 12px; font-size: 22px; color: #24292e;"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com/kans_404_err/"
+        target="_blank"
+        style="margin: 0 12px; font-size: 22px; color: #e1306c;"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+    <p style="margin: 0; color: #555;">
+      © <span id="year"></span> Kannan s 
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 </body>
